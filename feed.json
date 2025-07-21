@@ -5,9 +5,42 @@
     "home_page_url": "https://testingpublii.pages.dev",
     "feed_url": "https://testingpublii.pages.dev/feed.json",
     "user_comment": "",
+    "icon": "https://testingpublii.pages.dev/media/website/paper-mario.png",
     "author": {
         "name": "f"
     },
     "items": [
+        {
+            "id": "https://testingpublii.pages.dev/room-of-the-month-2/",
+            "url": "https://testingpublii.pages.dev/room-of-the-month-2/",
+            "title": "Room of the Month #2",
+            "summary": "neat neat neat neat neat neat neat",
+            "content_html": "<p>neat neat neat neat neat neat neat</p>",
+            "image": "https://testingpublii.pages.dev/media/posts/4/room2.png",
+            "author": {
+                "name": "f"
+            },
+            "tags": [
+                   "Featured Rooms"
+            ],
+            "date_published": "2025-07-21T13:00:48-04:00",
+            "date_modified": "2025-07-21T13:00:48-04:00"
+        },
+        {
+            "id": "https://testingpublii.pages.dev/room-of-the-month-1/",
+            "url": "https://testingpublii.pages.dev/room-of-the-month-1/",
+            "title": "Room of the Month #1",
+            "summary": "such a good room! This is the winner! Wow!",
+            "content_html": "\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://testingpublii.pages.dev/media/posts/3/room1.png\" height=\"462\" width=\"617\" alt=\"cool\"  sizes=\"(max-width: 48em) 100vw, 768px\" srcset=\"https://testingpublii.pages.dev/media/posts/3/responsive/room1-xs.png 300w ,https://testingpublii.pages.dev/media/posts/3/responsive/room1-sm.png 480w ,https://testingpublii.pages.dev/media/posts/3/responsive/room1-md.png 768w\">\n      <figcaption>such a good room!</figcaption>\n    </figure>\n\n  <p>\n    This is the winner! Wow!\n  </p>\n\n  <p>\n    \n  </p>",
+            "image": "https://testingpublii.pages.dev/media/posts/3/room1-2.png",
+            "author": {
+                "name": "f"
+            },
+            "tags": [
+                   "Featured Rooms"
+            ],
+            "date_published": "2025-07-21T13:00:01-04:00",
+            "date_modified": "2025-07-21T13:00:12-04:00"
+        }
     ]
 }
