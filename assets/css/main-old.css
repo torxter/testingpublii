@@ -280,7 +280,7 @@ header p {
 header.major > :last-child {
   border-bottom: solid 3px var(--color);
   display: inline-block;
-  margin: 0 0 1em 0;
+  margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0;
 }
 header.main > :last-child {
@@ -1239,7 +1239,7 @@ button:disabled,
   max-width: 110em;
 }
 #main > .inner > section {
-  padding: 1em 0 1em 0;
+  padding: 6em 0 4em 0;
   border-top: solid 2px rgba(210, 215, 217, 0.75);
 }
 #main > .inner > section:first-of-type {
@@ -2124,7 +2124,7 @@ hr::before,
   display: -ms-flex;
   display: flex;
   border-bottom: solid 5px var(--color);
-  padding: 1em 0 1em 0;
+  padding: 6em 0 1em 0;
   position: relative;
 }
 #header > * {
@@ -2144,12 +2144,12 @@ hr::before,
 }
 @media screen and (max-width: 1680px) {
   #header {
-    padding-top: 1em;
+    padding-top: 5em;
   }
 }
 @media screen and (max-width: 736px) {
   #header {
-    padding-top: 1em;
+    padding-top: 6.5em;
   }
   #header .logo {
     font-size: 1.25em;
@@ -2338,78 +2338,4 @@ hr::before,
   border-top: 0;
   margin-top: 0;
   padding-top: 0;
-}
-
-/* Custom */
-/*#gallery img, */
-#gallery span {
-  width: 175px;
-  height: 175px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 0.5em;
-  transition: transform 0.3s ease;
-  background-color: #f5f6f7; /* Fallback for non-image content */
-}
-
-#gallery {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    gap: 10px;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 0px;
-
-}
-
-#gallery2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-/* Styles for the Habbo Photo Gallery */
-.gallery-photo {
-    width: 175px;
-    height: 175px;
-    object-fit: cover;
-    border: 3px solid #ddd; /* Light grey border */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f5f6f7; /* Fallback for non-image content */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-    margin: 5px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
-}
-
-.gallery-photo:hover {
-    transform: scale(1.05); /* Slightly enlarge image on hover */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhance shadow on hover */
-}
-
-.gallery-see-more {
-    display: block;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 1em auto 0 auto;
-    height: fit-content;
-    border-color: rgba(var(--color-rgb), 0.8);
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 0.375em;
-    padding: 0.5em 1em;
-}
-
-.see-more-area{
-  text-align: right;
-
-}
-
-@media screen and (max-width: 736px) {
-    .photo-gallery-section {
-        display: none;
-    }
 }

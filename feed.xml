@@ -3,16 +3,37 @@
     <title>apt</title>
     <link href="https://testingpublii.pages.dev/feed.xml" rel="self" />
     <link href="https://testingpublii.pages.dev" />
-    <updated>2025-07-21T13:00:48-04:00</updated>
+    <updated>2025-07-22T15:23:53-04:00</updated>
     <author>
-        <name>f</name>
+        <name>Frequence</name>
     </author>
     <id>https://testingpublii.pages.dev</id>
 
     <entry>
+        <title>Event Time!</title>
+        <author>
+            <name>Frequence</name>
+        </author>
+        <link href="https://testingpublii.pages.dev/event-time/"/>
+        <id>https://testingpublii.pages.dev/event-time/</id>
+            <category term="Current Events"/>
+
+        <updated>2025-07-22T15:23:53-04:00</updated>
+            <summary>
+                <![CDATA[
+                    It's a quiz or something!!
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>It's a quiz or something!!</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
         <title>Room of the Month #2</title>
         <author>
-            <name>f</name>
+            <name>Frequence</name>
         </author>
         <link href="https://testingpublii.pages.dev/room-of-the-month-2/"/>
         <id>https://testingpublii.pages.dev/room-of-the-month-2/</id>
@@ -36,7 +57,7 @@
     <entry>
         <title>Room of the Month #1</title>
         <author>
-            <name>f</name>
+            <name>Frequence</name>
         </author>
         <link href="https://testingpublii.pages.dev/room-of-the-month-1/"/>
         <id>https://testingpublii.pages.dev/room-of-the-month-1/</id>
