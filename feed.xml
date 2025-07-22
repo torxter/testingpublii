@@ -3,10 +3,70 @@
     <title>apt</title>
     <link href="https://testingpublii.pages.dev/feed.xml" rel="self" />
     <link href="https://testingpublii.pages.dev" />
-    <updated>1969-12-31T19:00:00-05:00</updated>
+    <updated>2025-07-21T13:00:48-04:00</updated>
     <author>
         <name>f</name>
     </author>
     <id>https://testingpublii.pages.dev</id>
 
+    <entry>
+        <title>Room of the Month #2</title>
+        <author>
+            <name>f</name>
+        </author>
+        <link href="https://testingpublii.pages.dev/room-of-the-month-2/"/>
+        <id>https://testingpublii.pages.dev/room-of-the-month-2/</id>
+        <media:content url="https://testingpublii.pages.dev/media/posts/4/room2.png" medium="image" />
+            <category term="Featured Rooms"/>
+
+        <updated>2025-07-21T13:00:48-04:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://testingpublii.pages.dev/media/posts/4/room2.png" alt="" />
+                    neat neat neat neat neat neat neat
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://testingpublii.pages.dev/media/posts/4/room2.png" class="type:primaryImage" alt="" /></p>
+                <p>neat neat neat neat neat neat neat</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Room of the Month #1</title>
+        <author>
+            <name>f</name>
+        </author>
+        <link href="https://testingpublii.pages.dev/room-of-the-month-1/"/>
+        <id>https://testingpublii.pages.dev/room-of-the-month-1/</id>
+        <media:content url="https://testingpublii.pages.dev/media/posts/3/room1-2.png" medium="image" />
+            <category term="Featured Rooms"/>
+
+        <updated>2025-07-21T13:00:01-04:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://testingpublii.pages.dev/media/posts/3/room1-2.png" alt="" />
+                    such a good room! This is the winner! Wow!
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://testingpublii.pages.dev/media/posts/3/room1-2.png" class="type:primaryImage" alt="" /></p>
+                
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://testingpublii.pages.dev/media/posts/3/room1.png" height="462" width="617" alt="cool"  sizes="(max-width: 48em) 100vw, 768px" srcset="https://testingpublii.pages.dev/media/posts/3/responsive/room1-xs.png 300w ,https://testingpublii.pages.dev/media/posts/3/responsive/room1-sm.png 480w ,https://testingpublii.pages.dev/media/posts/3/responsive/room1-md.png 768w">
+      <figcaption>such a good room!</figcaption>
+    </figure>
+
+  <p>
+    This is the winner! Wow!
+  </p>
+
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
 </feed>
