@@ -1,0 +1,292 @@
+:root {
+    --console-yellow: #ffc500;
+    --console-highlight: #fff588;
+    --console-lowlight: #aa8300;
+    --title-color: #905b00;
+
+    --nav-border: #935800;
+    --console-button: #daa000ea;
+    --console-button-highlight: #fcc400;
+    --console-button-lowlight: #935800;
+    --console-button-text: #713e00;
+
+    --console-background-1: #565656;
+    --console-background-2: #3b3b3b;
+    --general-lowlight: rgba(0, 0, 0, .2);
+    --general-highlight: rgba(255, 255, 255, .2);
+    --invisible: #0000;
+    --console-background:
+        radial-gradient(circle at 50% 50%, var(--invisible) 50%, var(--general-lowlight) 100%),
+        repeating-linear-gradient(
+                to bottom,
+                var(--console-background-1) 0 0.125em,
+                var(--console-background-2) 0.125em 0.25em
+        );
+
+    --border-radius: 1.5625em;
+    --main-border-width: 0.1725em;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+        padding: 0em 0.3125em;
+}
+
+.main-container {
+    color: white;
+    font-family: "Press Start 2P", monospace;
+    padding: 0em;
+    border-style: solid;
+    border-color: var(--console-yellow);
+    height: 100vh;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border-width: var(--main-border-width);
+
+    border-top-color: var(--console-highlight);
+    border-left-color: var(--console-highlight);
+    border-bottom-color: var(--console-lowlight);
+    border-right-color: var(--console-lowlight);
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    background-color: var(--console-yellow);
+}
+
+.inner-console {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: var(--console-background);
+    overflow: auto;
+    border-width: .4em;
+    border-style: solid;
+    border-left-color: var(--general-lowlight);
+    border-top-color: var(--general-lowlight);
+    border-bottom-color: var(--invisible);
+    border-right-color: var(--invisible);
+    
+}
+
+main{
+        margin: 0em;
+        padding: 0em;
+        flex-grow: 1;
+}
+
+main section {
+        display: block;
+        flex-grow: 0;
+}
+
+footer {
+    font-size: 0.5em;
+    text-align: right;
+}
+
+nav {
+    flex-grow: 0;
+    background-color: var(--console-yellow);
+    display: flex;
+    background-color: var(--console-yellow);
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+
+    height: 7.75em;
+
+    box-sizing: border-box;
+
+    padding-top: 0.625em;
+}
+
+p a {
+    color: white;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: white;
+    text-decoration: underline;
+    position: relative;
+    top: .075em;
+    left: .075em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 6.75em;
+    flex-grow: 0;
+    margin: 0;
+    border-color: var(--nav-border);
+    border-style: solid;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    top: var(--main-border-width);
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+    height: 100%;
+    background-color: var(--console-button);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--console-button-text);
+    font-family: "Press Start 2P", monospace;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.3125em;
+    padding-top: 0.625em;
+    width: 7.8125em;
+    height: 100%;
+    box-sizing: border-box;
+
+    position: relative;
+
+    border-width: 0.125em;
+    border-style: solid;
+    border-bottom-width: 0em;
+    border-top-color: var(--console-button-highlight);
+    border-left-color: var(--console-button-highlight);
+    border-bottom-color: var(--console-button-lowlight);
+    border-right-color: var(--console-button-lowlight);
+}
+
+nav ul li a:hover {
+    background-color: var(--console-button);
+    background-image: linear-gradient(
+        to bottom,
+        var(--general-highlight) 0 0.125em,
+        var(--general-highlight) 0.125em 0.25em
+    );
+    color: var(--console-button-text);
+}
+
+nav ul li a:active, nav ul li a:focus, nav ul li a span:active, nav ul li a span:focus {
+    background-color: var(--console-button);
+    background-image: linear-gradient(
+        to bottom,
+        var(--general-lowlight) 0 0.125em,
+        var(--general-lowlight) 0.125em 0.25em
+    );
+    color: var(--invisible) !important;
+    text-shadow: var(--console-button-text) 0.05125em 0.05125em 0em !important;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        max-width: 90%;
+        height: 5em;
+    }
+
+    nav ul li {
+        width: 25%;
+    }
+    nav ul li a {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.675em;
+        padding: .9em;
+    }
+    nav {
+        padding-top: 0.3125em;
+    }
+}
+
+nav ul li a span, nav ul li a {
+        text-shadow: var(--general-lowlight) 0.05125em 0.05125em 0em !important;
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 0.625em;
+    height: 1.125em;
+    background: linear-gradient(
+        to bottom,
+        var(--console-button-highlight) 0 0.125em,
+        var(--console-button-lowlight) 0.125em 0.25em,
+        transparent 0.25em 0.375em,
+        var(--console-button-highlight) 0.375em 0.5em,
+        var(--console-button-lowlight) 0.5em 0.625em,
+        transparent 0.625em 0.75em,
+        var(--console-button-highlight) 0.75em 0.875em,
+        var(--console-button-lowlight) 0.875em 1em,
+        transparent 1em 1.125em
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.title {
+    color: var(--title-color);
+    top: 0em;
+    height: 3.125em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 0em;
+
+    border-style: solid;
+    border-color: var(--console-yellow);
+
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+
+    background-color: var(--title-color);
+    background-image: repeating-linear-gradient(
+                to right,
+                var(--console-yellow) 0 0.125em,
+                var(--invisible) 0.0125em 0.25em
+        ),
+        repeating-linear-gradient(
+                to bottom,
+                var(--console-yellow) 0 0.125em,
+                var(--invisible) 0.0125em 0.25em
+        );
+}
+
+.title span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--console-yellow);
+    padding: 0em 1.875em;
+    max-width: 60%;
+    overflow-x: hidden;
+    text-align: center;
+}
+
